@@ -7,5 +7,6 @@ public class Athletes {
 	{
 		this.StrName=StrName;
 		this.StrSport=StrSport;
+		
 	}
 }

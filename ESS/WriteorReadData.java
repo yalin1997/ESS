@@ -17,11 +17,13 @@ public class WriteorReadData {
 			String reader =null;
 			String SportEnent=null;
 			String Athlete=null;
+			Sort sort = new Sort();
 			while((reader=br.readLine())!=null)
 			{
 				SportEnent=reader.split("   ")[2];
 				Athlete=reader.split("   ")[0];
-				
+				Athletes player = new Athletes(Athlete,SportEnent);
+				sort.addAthletes(player);
 			}
 		}
 		catch(IOException e)
