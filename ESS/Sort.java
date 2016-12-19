@@ -1,17 +1,22 @@
 package ESS;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 
 public class Sort {
-	public static Set<Athletes>AthletesSet =new HashSet<Athletes>();
+	public List<Athletes> AthletesList =new ArrayList<Athletes>();
 	public Sort()
 	{
 		
 	}
 	public void addAthletes(Athletes Input)
 	{
-		AthletesSet.add(Input);
+		AthletesList.add(Input);
 	}
-	
+	public void RamdomSort()
+	{
+		Collections.shuffle(AthletesList);
+	}
 }
