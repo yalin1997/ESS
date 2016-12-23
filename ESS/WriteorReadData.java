@@ -32,7 +32,6 @@ public class WriteorReadData {
 			SportEnent=reader.split("   ")[2];
 			Athlete=reader.split("   ")[0];
 			Sex=reader.split("   ")[1];
-			
 		}
 	}
 
