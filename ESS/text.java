@@ -14,7 +14,7 @@ public class text {
 		{
 			s.readTxt();
 			a = new Sort();
-			a.addAthletes(new Athletes(s.Athlete,s.SportEnent));
+			a.addAthletes(new Athletes(s.Athlete,s.SportEvent));
 		}
 		
 		for(Athletes temp:a.AthletesList)
