@@ -1,14 +1,13 @@
 package ESS;
 
 import java.io.IOException;
-import java.util.Iterator;
+
 
 public class text {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		WriteorReadData s = new WriteorReadData("D:/athlete.txt");
-		String Ans="";
 		Sort a=null;
 		while(s.br.ready())
 		{
