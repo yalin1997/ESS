@@ -38,7 +38,7 @@ public class ESS_center {
 				}
 				
 			}
-			System.out.println(Final);
+			Output.output(Final);
 			sc.close();
 		}
 		catch(IOException e)
