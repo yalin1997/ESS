@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.Scanner;
 
+//txt檔預設路徑:C:/athlete.txt
+
 public class ESS_center {
 	private static Sort [] A = new Sort [8];
 	public static void newSort()
@@ -14,15 +16,14 @@ public class ESS_center {
 		}
 
 	}
-	public static void main(String [] args)
+	
+	public static void getFinal(String fileName)
 	{
 		String Final="";
-		Scanner sc = new Scanner(System.in);
-		String FilePath = sc.nextLine();
 		try
 		{
 			newSort();
-			Fill_In(FilePath);
+			Fill_In(fileName);
 			
 			for(int i =0;i<A.length;i++)
 			{
@@ -35,16 +36,17 @@ public class ESS_center {
 					{
 						Final=Final+" VS "+it.next().StrName+"  "+A[i].getSport()+"\n";
 					}
-				}
-				
+				}	
 			}
-			Output.output(Final);
-			sc.close();
+			//System.out.println(Final);
+			OutputTxt.output(Final);
+
 		}
 		catch(IOException e)
 		{
-			System.out.println(e.getStackTrace());
+			//System.out.println(e.getStackTrace());
 		}
+		
 		
 	}
 	
